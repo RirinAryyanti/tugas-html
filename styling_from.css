@@ -1,0 +1,96 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #ffafbd, #ffc3a0); 
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgba(238, 210, 210, 0.9); 
+  border-radius: 10px; 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.bg-white {
+  background-color: #f57a7a;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 20px;
+  color: white;
+}
+
+label {
+  font-weight: bold;
+  color: white;
+  margin-bottom: 4px;
+  display: block;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #ff6f61;
+  box-shadow: 0 0 5px rgba(255, 111, 97, 0.5);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: #ff6f61;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #a51205;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+button:hover {
+  background-color: #ff3d40; 
+  transform: translateY(-2px);
+}
+
+button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
