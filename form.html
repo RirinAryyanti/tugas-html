@@ -3,92 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>File HTML index</title>
+  <title>Sign Up Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styling_from.css">
 </head>
-<body>
-  <body class="flex justify-center items-center min-h-screen bg-gray-100">
-    <div class="bg-white p-8 rounded shadow-md w-96">
-      <h1 class="text-2xl font-bold mb-4">Buat Account Baru</h1>
-      <h2 class="text-xl font-semibold mb-4">Sign Up Form</h2>
-      <form>
-        <div class="mb-4">
-          <label class="block text-gray-700">First name :</label>
-          <input type="text" class="border border-gray-400 p-2 w-full" />
-        </div>
-        <div class="mb-4">
-          <label class="block text-gray-700">Last name :</label>
-          <input type="text" class="border border-gray-400 p-2 w-full" />
-        </div>
-        <div class="mb-4">
-          <label class="block text-gray-700">Gender</label>
-          <div>
-            <label class="inline-flex items-center">
-              <input
-                type="radio"
-                name="gender"
-                class="form-radio"
-                value="male"
-              />
-              <span class="ml-2">Male</span>
-            </label>
-          </div>
-          <div>
-            <label class="inline-flex items-center">
-              <input
-                type="radio"
-                name="gender"
-                class="form-radio"
-                value="female"
-              />
-              <span class="ml-2">Female</span>
-            </label>
-          </div>
-        </div>
-        <div class="mb-4">
-          <label class="block text-gray-700">Nationality</label>
-          <select class="border border-gray-400 p-2 w-full">
-            <option>Indonesia</option>
-            <option>Amerika</option>
-            <option>Inggris</option>
-          </select>
-        </div>
-        <div class="mb-4">
-          <label class="block text-gray-700">Language Spoken</label>
-          <div>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="form-checkbox" value="bahasa" />
-              <span class="ml-2">Bahasa Indonesia</span>
-            </label>
-          </div>
-          <div>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="form-checkbox" value="english" />
-              <span class="ml-2">English</span>
-            </label>
-          </div>
-          <div>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="form-checkbox" value="other" />
-              <span class="ml-2">Other</span>
-            </label>
-          </div>
-        </div>
-        <div class="mb-4">
-          <label class="block text-gray-700">Bio</label>
-          <textarea class="border border-gray-400 p-2 w-full h-24"></textarea>
-        </div>
+<body class="d-flex justify-content-center align-items-center min-vh-100">
+  <div class="card w-50">
+    <h1>Welcome!</h1>
+    <h2>Create Your Account</h2>
+    <form>
+      <div class="mb-3">
+        <label for="firstName" class="form-label">First Name</label>
+        <input type="text" id="firstName" class="form-control" placeholder="Enter your first name">
+      </div>
+
+      <div class="mb-3">
+        <label for="lastName" class="form-label">Last Name</label>
+        <input type="text" id="lastName" class="form-control" placeholder="Enter your last name">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Gender</label>
         <div>
-          <button
-            type="submit"
-            class="bg-gray-300 text-gray-700 px-4 py-2 rounded"
-          >
-          <a href="welcome.html">Sign Up</a>
-          </button>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+            <label class="form-check-label" for="male">Male</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+            <label class="form-check-label" for="female">Female</label>
+          </div>
         </div>
-      </form>
-    </div>
-  </body>
-</html>
+      </div>
+
+      <div class="mb-3">
+        <label for="nationality" class="form-label">Nationality</label>
+        <select id="nationality" class="form-select">
+          <option selected disabled>Select your nationality</option>
+          <option>Indonesia</option>
+          <option>Amerika</option>
+          <option>Inggris</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Language Spoken</label>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="bahasa" value="bahasa">
+          <label class="form-check-label" for="bahasa">Bahasa Indonesia</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="english" value="english">
+          <label class="form-check-label" for="english">English</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="other" value="other">
+          <label class="form-check-label" for="other">Other</label>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="bio" class="form-label">Bio</label>
+        <textarea id="bio" class="form-control" rows="3" placeholder="Tell us about yourself"></textarea>
+      </div>
+
+      <div class="d-grid">
+        <button type="submit"
+         class="btn btn-custom"><a href="welcome.html">Sign Up</a>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

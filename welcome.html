@@ -1,13 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="stylesheet" href="styling_welcome.css">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Selamat Datang</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-  <h1>SELAMAT DATANG!</h1>
-  <h3>Terimakasih telah bergabung di website kami. Media belajar kita bersama</h3>
+<body style="background-color: #e3f2fd; /* Latar belakang biru muda */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+  font-family: 'Arial', sans-serif;">
+
+  <div class="container">
+    <h1 style="font-size: 3.5em;
+      color: #1976d2;
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 2px solid #64b5f6;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      animation: bounce 2s infinite;">
+      SELAMAT DATANG!
+    </h1>
+
+    <h3 style="font-size: 1.5em;
+      color: #fff;
+      max-width: 1100px;
+      line-height: 1.6;
+      padding: 20px;
+      background-color: #42a5f5;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      margin-top: 30px;
+      animation: fadeIn 2s ease-out;">
+      Terimakasih telah bergabung di website kami. Media belajar kita bersama.
+    </h3>
+  </div>
+
+  <script>
+    document.styleSheets[0].insertRule(`
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-10px);
+        }
+        60% {
+          transform: translateY(-5px);
+        }
+      }
+    `, 0);
+
+    document.styleSheets[0].insertRule(`
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    `, 0);
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
